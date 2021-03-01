@@ -80,6 +80,7 @@
 }
 .icon-arrow-left:before {
   content: "\e904";
+  transition-duration:300ms;
 }
 .icon-arrow-circle-right:before {
   content: "\e905";

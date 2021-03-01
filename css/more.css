@@ -33,13 +33,10 @@
 }
 
 
-.card-header a[aria-expanded=true] .icon-arrow-down:before {
-    content: "";
+.card-header a[aria-expanded=true] .icon-arrow-left:before {
     display: inline-block;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
-
-
 
 
 .chevron-head{
