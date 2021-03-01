@@ -1,0 +1,87 @@
+/* :: 20.0 Contact Area */
+
+.contact-area{
+    margin-bottom: 22rem;
+    @media #{$breakpoint-xs} {
+        margin-bottom: 25rem;
+    }
+}
+
+.single-contact-card {
+    position: relative;
+    z-index: 1;
+
+
+    h4 {
+        font-size: 30px;
+        font-weight: 400;
+        color:$white;
+        margin:0;
+    }
+
+
+    h6 {
+        margin-bottom: 0;
+        color: $white;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+
+        @media #{$breakpoint-xs} {
+            font-size: 13px;
+        }
+    }
+
+    h5 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        color: $white;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 700;
+
+        @media #{$breakpoint-xs} {
+            font-size: 14px;
+        }
+    }
+}
+
+.card-position{
+
+        .contact-Thakns{
+            display: none;
+            position: absolute;
+            background-color: #F4F4F4;
+            z-index: 5000;
+            width: 100%;
+            height: 90%;
+            padding: 0 2rem;
+            margin-top: -27rem;
+
+            &.show{
+                display: block;
+            }
+
+            h2{
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 1;
+                argin-bottom: 1.5rem;
+                margin-top: 6rem;
+                color: $primary;
+
+            }
+
+            p{
+                line-height: 1;
+                font-size: 17px;
+                margin-bottom: 0.5rem;
+                color: $c-gray;
+            }
+        }
+
+}
+
+.contact-margin{
+   padding: 3rem 2rem;
+}
