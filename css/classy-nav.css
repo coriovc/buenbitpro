@@ -410,6 +410,7 @@ img {
 /* Mobile/Tablet Nav CSS */
 .breakpoint-on .classycloseIcon {
   display: block;
+      top: 40px;
 }
 .breakpoint-on .classy-navbar-toggler {
   display: block;

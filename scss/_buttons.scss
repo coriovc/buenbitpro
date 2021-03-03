@@ -100,9 +100,10 @@
         background-color: transparent;
         
         @media #{$breakpoint-xs} {
-            border-color: $primary;
-            color: $primary;
             line-height: 1.5;
+            font-size: 22px;
+            width: 60%;
+            margin: 1.5rem 0;
         }
         
         &:focus,

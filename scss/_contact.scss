@@ -58,10 +58,15 @@
             padding: 0 2rem;
             margin-top: -27rem;
 
+            @media #{$breakpoint-xs} {
+                height: 110%;
+                margin-top: -23rem;
+            }
+
             &.show{
                 display: block;
             }
-
+                
             h2{
                 font-size: 48px;
                 font-weight: 400;
@@ -84,4 +89,8 @@
 
 .contact-margin{
    padding: 3rem 2rem;
+
+   @media #{$breakpoint-xs} {
+        padding: 0;
+    }
 }

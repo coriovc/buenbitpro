@@ -17,10 +17,12 @@
     position: relative;
     z-index: 1;
     margin:0;  
+    text-align: left;
+
 
     @media #{$breakpoint-xs} {
-        margin: 0.7rem 0 0 0;
-        }
+        text-align: center;
+    }
 
     .widget-title {
         color: $heading;
@@ -48,8 +50,12 @@
     }
 
     .footer-social-info {
-        margin-bottom:1rem;    
+        margin-bottom:1rem;
         
+        @media #{$breakpoint-xs} {
+            margin-bottom:0;
+        }
+
         a {
             display: inline-block;
             color: $white;
@@ -70,10 +76,10 @@
 
             @media #{$breakpoint-xs} {
                 font-size: 24px;
-                margin-right: auto;                
+                margin-right: 8px;                
                 width: 35px;
                 height: 35px;
-                line-height: 30px;
+                line-height: 26px;
             }
 
         }

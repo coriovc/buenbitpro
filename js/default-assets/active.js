@@ -92,17 +92,6 @@
         });
     }
 
-    // **************************
-    // :: 14.0 Sticky Active Code
-    // **************************
-    uza_window.on('scroll', function () {
-        if (uza_window.scrollTop() > 0) {
-            $('.main-header-area').addClass('sticky');
-        } else {
-            $('.main-header-area').removeClass('sticky');
-        }
-    });
-
     // ********************************
     // :: 15.0 Slick Slider Active Code
     // ********************************
@@ -142,17 +131,6 @@
     });
 
     $(function(){
-        $(document).scroll(function(){
-            if($(this).scrollTop() > 1) {
-                $('#logo').attr('src','img/logo-color.png')
-            }
-            if($(this).scrollTop() < 1) {        
-             $('#logo').attr('src','img/logo-white.png');   
-            }
-        });
-    });
-
-    $(function(){
 
         $(".has-megamenu").hover(
                 function () {
@@ -161,7 +139,7 @@
                 }, 
                 function () {
                     $(".main-header-area").removeClass("sticky-menu");
-                    $('#logo').attr('src','img/logo-color.png');
+                    $('#logo').attr('src','img/logo-white.png');
         });
 
 

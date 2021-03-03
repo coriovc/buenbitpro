@@ -15,7 +15,7 @@ $message .= "Razón Social: " . $razon . " \r\n";
 $message .= "Mensaje: " . $_POST['message'] . " \r\n\n\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'soporte@buenbit.com';
+$para = 'matias.alberti@pro.buenbit.com';
 $asunto = 'Buenbit Contacto';
 
 mail($para, $asunto, utf8_decode($message), $header);
