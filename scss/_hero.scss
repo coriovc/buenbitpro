@@ -9,6 +9,9 @@
 .welcome-area-index {
     overflow: hidden;
     margin-top: -8rem;
+    @media #{$breakpoint-xs} {
+        margin-top: -5rem;
+    }
 }
 
 .welcome-area {
@@ -158,7 +161,7 @@
             &.a{
                 width: 15%;
                 margin-top: -18rem;
-                margin-right: -14rem;
+                margin-right: -24rem;
                 -webkit-animation: mover 3s infinite  alternate;
                 animation: mover 3s infinite  alternate;
             }
@@ -166,7 +169,7 @@
             &.b{
                 width: 17%;
                 margin-top: -12rem;
-                margin-right: -27rem;
+                margin-right: -37rem;
                 -webkit-animation: mover 3.1s infinite  alternate;
                 animation: mover 3.1s infinite  alternate;
 
@@ -181,14 +184,14 @@
             &.c{
                 width: 19%;
                 margin-top: -4rem;
-                margin-right: -15rem;
+                margin-right: -25rem;
                 -webkit-animation: mover 3.2s infinite  alternate;
                 animation: mover 3.2s infinite  alternate;
             }
 
             &.d{
                 width: 16%;
-                margin-right: -4rem;
+                margin-right: -14rem;
                 -webkit-animation: mover 3.3s infinite  alternate;
                 animation: mover 3.3s infinite  alternate;
             }
@@ -243,27 +246,27 @@
             }
 
             &.a{
-                width: 5%;
+                width: 4%;
                 margin-top: -13rem;
-                margin-right: -18rem;
+                margin-right: -28rem;
             }
 
             &.b{
-                width: 2%;
+                width: 1.5%;
                 margin-top: -7rem;
-                margin-right: 1rem;
+                margin-right: -12em;
             }
 
             &.c{
-                width: 5%;
+                width: 4%;
                 margin-top: -5rem;
-                margin-right: -1rem;
+                margin-right: -11rem;
             }
 
             &.d{
-                width: 2.5%;
+                width: 2%;
                 margin-top: -7rem;
-                margin-right: -18.5rem;
+                margin-right: -28.5rem;
             }
 
         }
@@ -274,30 +277,17 @@
             right: 0;
 
             &.a{
-                width: 3%;
+                width: 2%;
                 margin-top: -15rem;
-                margin-right: -6.5rem;
-                -webkit-animation: mover-x 1s infinite  alternate;
-                animation: mover-x 1s infinite  alternate;
+                margin-right: -16.5rem;
             }
 
             &.b{
-                width: 6%;
+                width: 5%;
                 margin-top: -3rem;
-                margin-right: -20rem;
-                -webkit-animation: mover-x 1.2s infinite  alternate;
-                animation: mover-x 1.2s infinite  alternate;
+                margin-right: -30rem;
             }
 
-        }
-
-        @-webkit-keyframes mover-x {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-3px); }
-        }
-        @keyframes mover-x {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-3px); }
         }
 
 }

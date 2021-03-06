@@ -10,40 +10,6 @@
 
     .dropdown {
 
-      &.lang{
-        .dropdown-menu {
-            border-radius: 1rem;
-            padding: 0;
-            border: 1.5px solid;
-            border-color: $primary;
-            min-width: auto;
-            box-shadow: 0 6px 50px 8px rgba(0, 0, 0, .1);
-
-            .dropdown-item {
-                  display: block;
-                  width: 100%;
-                  padding: 0.25rem 1rem;
-                  clear: both;
-                  font-weight: 400;
-                  color: #CACACA;
-                  text-align: inherit;
-                  white-space: nowrap;
-                  background-color: transparent;
-                  border: 0;
-                &.active{
-                   color: $primary;
-                }
-                &:hover{
-                    color: $primary;
-                }
-            }
-
-                    
-            @media #{$breakpoint-xs} {
-                padding: 1rem 0;         
-            } 
-        }  
-      }
 
         .dropdown-menu {        
             border:none;
@@ -75,6 +41,9 @@
 
             .logo-head {
                width: 150px;
+               @media #{$breakpoint-xs} {
+                    width: 120px;
+                }
             }
         
             .classy-navbar {
@@ -94,7 +63,7 @@
                             position: relative;
                             z-index: 1;
                             font-weight: 300;
-                            font-size: 18px;
+                            font-size: 15px;
                             text-transform: capitalize;
                             color: $c-gray;
                             margin: 16px 0;
@@ -119,7 +88,7 @@
 
                             @media #{$breakpoint-xs} {
                                 width: auto;
-                                font-size: 18px;
+                                font-size: 15px;
                             }
                         }
 
@@ -177,6 +146,9 @@
     
     .logo-head {
        width: 150px;
+       @media #{$breakpoint-xs} {
+             width: 120px;
+        }
     }
 
     @media #{$breakpoint-xs} {
@@ -185,10 +157,13 @@
 
     .classy-navbar {
         height: auto;
-        padding: 0 6% 0 9%;
+        padding: 0 0 0 0.7rem;
 
         &.index{
             margin-top: 3rem;
+            @media #{$breakpoint-xs} {
+             margin-top: 0;
+            }
         }
 
         @media #{$breakpoint-xs} {
@@ -214,7 +189,7 @@
                     position: relative;
                     z-index: 1;
                     font-weight: 300;
-                    font-size: 18px;
+                    font-size: 15px;
                     text-transform: capitalize;
                     color: $white;
                     margin: 16px 0;

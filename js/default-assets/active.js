@@ -130,6 +130,17 @@
 
     });
 
+    $(function() {
+        $(document).on('click', '.close-item', function(event) {
+            var navToggler = $('.navbarToggler');
+            var classyMenu = $('.classy-menu');
+
+            classyMenu.removeClass('menu-on');
+            navToggler.removeClass('active');
+        });
+
+    });
+
     $(function(){
 
         $(".has-megamenu").hover(

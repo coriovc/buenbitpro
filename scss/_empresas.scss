@@ -92,13 +92,20 @@
 
 
                 h3{
-                    font-size: 18px;
+                    font-size: 17px;
                     font-weight: 400;
                     margin: 0;
                     color: $c-gray; 
 
                     &.center{
                         margin: 0.7rem 0 0 0;
+
+                        @media #{$breakpoint-xs} {
+                            &.two{
+                            margin: 0;
+                            }
+                        }
+                        
                     }
                 }
 
@@ -294,7 +301,7 @@
     .movil{
         
         @media #{$breakpoint-xs} {
-            margin-top: -3rem;
+            margin-top: -9rem;
         }
     }
     .puntos-h{
@@ -302,13 +309,13 @@
             max-width: 200%;
             position: absolute;
             z-index: -1;
-            margin-top: -10rem;
+            margin-top: -14rem;
             left: 0;
             margin-left: -7rem;
 
             @media #{$breakpoint-xs} {
-                width: 120%;
-                margin-top: -24rem;
+                width: 125%;
+                margin-top: -28rem;
                 margin-right: -20rem;
             }
         }
@@ -319,7 +326,7 @@
             right: 0;  
 
             &.a{
-                width: 27%;
+                width: 20%;
                 margin-top: -10rem;
                 margin-left: 15rem;
                 left: 0;
@@ -327,7 +334,7 @@
                 animation: mover 2.5s infinite alternate ;
 
                 @media #{$breakpoint-xs} {
-                    width: 30%;
+                    width: 22%;
                     margin-top: -22rem;
                     margin-left: 8rem;
                 }
@@ -335,7 +342,7 @@
             }
 
             &.b{
-                width: 23%;
+                width: 18%;
                 margin-top: 3rem;
                 left: 0;
                 margin-left: 18.5rem;
@@ -343,8 +350,8 @@
                 animation: mover 2.7s infinite alternate ;
 
                 @media #{$breakpoint-xs} {
-                    width: 30%;
-                    margin-top: -10rem;
+                    width: 22%;
+                    margin-top: -13rem;
                     margin-left: 11rem;
                 }
 
@@ -382,53 +389,54 @@
             right: 0;
 
             &.a{
-                width: 8%;
+                width: 6%;
                 margin-top: -5rem;
-                margin-left: 28rem;
+                margin-left: 25rem;
                 left: 0;
 
                 @media #{$breakpoint-xs} {
-                    margin-top: -21rem;
-                    margin-left: 21rem;
+                    margin-top: -19rem;
+                    margin-left: 17rem;
+                    width: 5%;
                 }
             }
 
             &.b{
-                width: 3%;
+                width: 2%;
                 margin-top: 1rem;
-                margin-left: 30rem;
+                margin-left: 27rem;
                 left: 0;
 
                 @media #{$breakpoint-xs} {
-                    width: 4%;
+                    width: 3%;
                     margin-top: -15rem;
-                    margin-left: 21rem;
+                    margin-left: 16.5rem;
                 }
             }
 
             &.c{
-                width: 5%;
+                width: 4%;
                 margin-top: 4rem;                
                 margin-left: 13rem;
                 left: 0;
 
                 @media #{$breakpoint-xs} {
                     width: 6%;
-                    margin-top: -11rem;
-                    margin-left: 4rem;
+                    margin-top: -13rem;
+                    margin-left: 6rem;
                 }
             }
 
             &.d{
-                width: 2.5%;
+                width: 2%;
                 margin-top: 2rem;
                 left: 0;
                 margin-left: 10rem;
 
                 @media #{$breakpoint-xs} {
-                    width: 2.5%;
-                    margin-top: -13rem;
-                    margin-left: 2.5rem;
+                    width: 2%;
+                    margin-top: -15rem;
+                    margin-left: 5rem;
                 }
             }
 
@@ -440,58 +448,32 @@
             right: 0;
 
             &.a{
-                width: 6%;
+                width: 3%;
                 margin-top: -9rem;
                 margin-left: 12rem;
                 left: 0;
-                -webkit-animation: mover-x 2.5s infinite  alternate;
-                animation: mover-x 2.5s infinite  alternate;
 
                 @media #{$breakpoint-xs} {
-                    width: 9%;
-                    margin-top: -20rem;
-                    margin-left: 4rem;
+                    width: 3.5%;
+                    margin-top: -21rem;
+                    margin-left: 6rem;
                 }
             }
 
             &.b{
-                width: 6%;
+                width: 4%;
                 margin-top: 5rem;
-                margin-left: 30rem;
+                margin-left: 27rem;
                 left: 0;
-                -webkit-animation: mover-x2.7s infinite  alternate;
-                animation: mover-x2.7s infinite  alternate;
 
                 @media #{$breakpoint-xs} {
-                    width: 13%;
-                    margin-top: -10rem;
-                    margin-left: 20rem;
+                    width: 6%;
+                    margin-top: -12rem;
+                    margin-left: 18rem;
                 }
             }
         }
-
-        @-webkit-keyframes mover-x {
-            0% {
-          transform: translateX(10px);
-          }
-          50% {
-          transform: translateX(30px);
-          }
-          100% {
-          transform: translateX(10px);
-          }
-        }
-        @keyframes mover-x {
-           0% {
-          transform: translateX(10px);
-          }
-          50% {
-          transform: translateX(30px);
-          }
-          100% {
-          transform: translateX(10px);
-          }
-        }
+        
 
     .card{
         @include transition-duration(500ms);
